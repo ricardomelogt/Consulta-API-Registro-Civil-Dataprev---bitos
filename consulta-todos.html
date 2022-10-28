@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP Consulta Dataprev - Consulta por lote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="form-area">
+
+            <h4>Consulta Dataprev - Óbitos por lote </h4>
+
+            <!-- <p>Token de acesso:</p>
+            <input class="input-text" type="text" placeholder="token de acesso..."> -->
+
+            <p>Lista de CPF (separados por um caracter de espaço, ex: 08807706605 05504403302 09908807706)</p>
+            <input id="campo-bulk" class="input-text" type="text" placeholder="...">
+
+        </div>
+
+        <div id="btn-send-form" class="btn-send" onclick="enviarBulk()">Enviar</div>
+
+        <pre>
+            <p id="status">Status da consulta: Sem consulta</p>
+            <div class="flex-container">
+                <div id="btn-geral" class="btn" onclick="showGeral()">Resultado Geral</div>
+                <div id="btn-filtro" class="btn" onclick="showFiltrado()">Resultado Filtrado</div>
+                <div id="btn-excel" class="btn hidden" onclick="exportToExcel()">Download em excel</div>
+            </div>
+            <code id='result' class="box_style">Resultado:</code>
+        </pre>
+        <div id="filter-result" class="hidden">
+            <table id="result-list">
+                <tbody id="result-table">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Documento</th>
+                        <th>Num. Documento</th>
+                        <th>Matrícula</th>
+                        <th>Data da Lavratura</th>
+                        <th>Sexo</th>
+                        <th>Data Nascimento (ano-mês-dia)</th>
+                        <th>Data do Óbito (ano-mês-dia)</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="bulk.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    text-align: center;
+}
+
+.input-text {
+    padding: 5px;
+}
+
+#campo-bulk {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-wrapper {
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 1px 5px #bfbfbf;
+    margin: 0 auto;
+}
+
+.btn-send {
+    background-color: rgb(12, 64, 115);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box_style {
+    display: block;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+#status {
+    margin: 5px auto;
+    text-align: center;
+}
+
+#result {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.btn {
+    align-self: center;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(12, 64, 115);
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#btn-excel {
+    background: #dbdbdb;
+    color: rgb(67, 67, 67);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+#result-list {
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    max-height: 800px;
+    overflow: auto;
+}
+
+#result-list th, #result-list td {
+    border: 1px solid #a1a1a1;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#result-list th {
+    background:rgb(12 64 115);
+    color:white;
+}
+
+#result-list tr:nth-child(2n+1) {
+    background:#f2f2f2;
+}
+
+.hidden {
+    display: none;
+}

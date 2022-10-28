@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP Consulta Dataprev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="form-area">
+
+            <h4>Consulta Dataprev - Óbitos</h4>
+
+            <!-- <p>Token de acesso:</p>
+            <input class="input-text" type="text" placeholder="token de acesso..."> -->
+
+            <p>Nome:</p>
+            <input id="campo-nome" class="input-text" type="text" placeholder="nome...">
+
+            <p>Nome da mãe:</p>
+            <input id="campo-filiacao" class="input-text" type="text" placeholder="nome da mãe...">
+
+            <p>CPF:</p>
+            <input id="campo-cpf" class="input-text" type="text" placeholder="cpf...">
+
+        </div>
+
+        <div id="btn-send-form" class="btn-send" onclick="enviar()">Enviar</div>
+
+        <pre>
+            <p id="status">Status da consulta:</p>
+            <code id='result' class="box_style">Resultado:</code>
+        </pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
