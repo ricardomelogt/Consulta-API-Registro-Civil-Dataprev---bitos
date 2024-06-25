@@ -31,7 +31,7 @@ const enviarBulk = ()=>{
         fetch(fetchURL, {
             headers: {
                 'accept': 'application/json',
-                'Authorization': 'Bearer 01f13133-c2ca-3c50-a801-ce0d8faa1829'
+                'Authorization': 'api-key-here'
             }
         })
         .then(res => responseInfo = res)
